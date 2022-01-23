@@ -1,0 +1,34 @@
+hmtx_cluster -> matrixcluster -> clusteradmissibility
+                              -> hmtx_create
+                              -> dissect3d
+hmtx_plot -> patchmatrix
+
+hmtx_fill -> fillhmatrix -> fkern
+                         -> aca
+                         -> rSVD_rkmatrix
+
+hmtx_full -> assemblefull
+
+hmtx_mtimes ->
+H matrix struct
+
+type: matrix type 'supermatrix','rkmatrix','fullmatrix'
+irow: row indices
+jcol: col indices
+nrow: number of rows
+Ncol: number of cols
+M: {2×2 cell} (supermatrix)
+   Double matrix (fullmatrix)
+   [] (rkmatrix)
+U: [] (fullmatrix/supermatrix)
+   Double matrix (rkmatrix)
+V: [] (fullmatrix/supermatrix)
+   Double matrix (rkmatrix)
+k: [] (fullmatrix/supermatrix)
+   Matrix rank (rkmatrix)
+eps: aca tolerance
+
+
+bisect3d.mblock_HxM.mblock_MxH.mclusteradmissibility.mdissect3d.mfull2rkmatrix.mfull2super.mrkmatrix2full.mrkmatrix2super.mrSVD_rkmatrix.msuper2full.msuper2rkmatrix.m
+
+aca.macafull.mhmtx_add.mhmtx_addentry.mhmtx_cluster.mhmtx_coarsening.mhmtx_compress.mhmtx_copystruct.mhmtx_create.mhmtx_fill.mhmtx_fixedboundary.mhmtx_full.mhmtx_getcluster.mhmtx_HxM.mhmtx_Mbyte.mhmtx_mtimes.mhmtx_mult.mhmtx_mvm.mhmtx_MxH.mhmtx_plot.mhmtx_tH.mishmtx.m
